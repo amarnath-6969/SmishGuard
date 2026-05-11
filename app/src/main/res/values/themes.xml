@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SmishGuard" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/accent_cyan</item>
+        <item name="colorPrimaryVariant">@color/bg_secondary</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSurface">@color/bg_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/bg_primary</item>
+        <item name="android:windowBackground">@color/bg_primary</item>
+        <item name="android:statusBarColor">@color/bg_secondary</item>
+        <item name="android:navigationBarColor">@color/bg_primary</item>
+        <item name="actionBarStyle">@style/SmishGuardActionBar</item>
+    </style>
+
+    <style name="SmishGuardActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/bg_secondary</item>
+        <item name="titleTextStyle">@style/SmishGuardActionBarTitle</item>
+    </style>
+
+    <style name="SmishGuardActionBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/accent_cyan</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+</resources>

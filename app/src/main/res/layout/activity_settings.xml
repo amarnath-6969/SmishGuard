@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_primary"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GEMINI AI"
+        android:textSize="10sp"
+        android:textColor="@color/text_muted"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/etGeminiKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Paste your Gemini API key (optional)"
+        android:inputType="textPassword"
+        android:textSize="13sp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_muted"
+        android:background="@color/bg_card"
+        android:padding="12dp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get a free key at aistudio.google.com — enables AI-powered plain English warnings. Works fully without a key."
+        android:textSize="11sp"
+        android:textColor="@color/text_muted"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_subtle"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GOOGLE SAFE BROWSING"
+        android:textSize="10sp"
+        android:textColor="@color/text_muted"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/etSafeBrowsingKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Paste your Google Safe Browsing API Key (optional)"
+        android:inputType="textPassword"
+        android:textSize="13sp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_muted"
+        android:background="@color/bg_card"
+        android:padding="12dp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get a free key from Google Cloud Console. Enables live scanning against Google's real-time threat database."
+        android:textSize="11sp"
+        android:textColor="@color/text_muted"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enable Live Cloud Scanning"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary" />
+
+        <Switch
+            android:id="@+id/switchCloudScanning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_subtle"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PREFERENCES"
+        android:textSize="10sp"
+        android:textColor="@color/text_muted"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enable AI-Powered Warnings"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary" />
+
+        <Switch
+            android:id="@+id/switchAiWarnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="28dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Log safe links in history"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary" />
+
+        <Switch
+            android:id="@+id/switchScanSafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Save Settings"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:backgroundTint="@color/accent_cyan"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnClearHistory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Clear Scan History"
+        android:textColor="@color/accent_red"
+        android:backgroundTint="@color/bg_card" />
+
+</LinearLayout>

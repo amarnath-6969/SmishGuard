@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background palette -->
+    <color name="bg_primary">#050B18</color>
+    <color name="bg_secondary">#0A1628</color>
+    <color name="bg_card">#0F1E3C</color>
+
+    <!-- Accents -->
+    <color name="accent_cyan">#00D4FF</color>
+    <color name="accent_green">#00FF88</color>
+    <color name="accent_red">#FF3366</color>
+    <color name="accent_orange">#FF8C42</color>
+
+    <!-- Text -->
+    <color name="text_primary">#E2E8F0</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_muted">#475569</color>
+
+    <!-- Border -->
+    <color name="border_subtle">#1A2D50</color>
+</resources>
